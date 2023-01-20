@@ -4,15 +4,24 @@ import { dataIcons } from "./data/dataIcons";
 
 function Icons(){
     const  [iconPic, setIconPic] = useState(dataIcons);
-    const {icon} = dataIcons[iconPic];
-
+    console.log(iconPic);
 
 return(<div>
     <div className="conter">
-        <img src={icon} alt="icon"/>
+        {iconPic.map((item =>{
+            const {id, icon} = item;
+            return(
+                <div key={id}>
+                    <img src={iconPic} alt="icon"/>
+                </div>
+            )
+        }))}
     </div>
-
 </div>)
 }
 
 export default Icons;
+
+
+
+

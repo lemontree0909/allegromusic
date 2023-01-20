@@ -1,6 +1,7 @@
 function Buttons({filteredInstruments}){
     return(
         <div className="navbar">
+            <button onClick={() => filteredInstruments("all")}>All</button>
             <button onClick={() => filteredInstruments("piano")}>pianos</button>
             <button onClick={() => filteredInstruments("guitar")}>guitars</button>
             <button onClick={() => filteredInstruments("drums")}>drums and percussion</button>

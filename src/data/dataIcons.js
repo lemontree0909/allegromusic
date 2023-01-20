@@ -1,7 +1,7 @@
-import icon_secure_shopping from './icon_secure_shopping.svg';
-import icon_fast_delivery from '.icon_fast_delivery.svg';
-import icon_wide_product_range from './icon_wide_product_range.svg';
-import icon_12_installment_options from './icon_12_installment_options.svg';
+import icon_secure_shopping from './picture/icons/icon_secure_shopping.svg';
+import icon_fast_delivery from './picture/icons/icon_fast_delivery.svg';
+import icon_wide_product_range from './picture/icons/icon_wide_product_range.svg';
+import icon_12_installment_options from './picture/icons/icon_12_installment_options.svg';
 
 
 export const dataIcons = [

@@ -1,6 +1,7 @@
 import Buttons from "./Buttons";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
+// import Icons from "./Icons";
 
 function Home(){
 
@@ -8,6 +9,7 @@ function Home(){
         <div>
             <Buttons/>
             <Carousel/>
+            {/* <Icons/> */}
             <Footer/>
 
         </div>

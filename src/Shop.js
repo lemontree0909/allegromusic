@@ -8,9 +8,15 @@ function Shop(){
     const [instruments, setInstruments] = useState(data);
 
     const choosenInstruments = (searchTerm) => {
-        const newInstruments = data.filter(element => element.searchTerm === searchTerm);
-        setInstruments(newInstruments);
+        if(searchTerm === 'all'){
+            setInstruments(instruments);
+        } else{
+            const newInstruments = data.filter(element => element.searchTerm === searchTerm);
+            setInstruments(newInstruments);
+        }
+
     }
+
 
     return(
         <div>
