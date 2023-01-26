@@ -1,15 +1,13 @@
-import Buttons from "./Buttons";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
-// import Icons from "./Icons";
+import Icons from "./Icons";
 
 function Home(){
 
     return(
         <div>
-            <Buttons/>
             <Carousel/>
-            {/* <Icons/> */}
+            <Icons/>
             <Footer/>
 
         </div>

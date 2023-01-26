@@ -1,23 +1,22 @@
-import { useState } from "react";
 import './App.css';
 import { dataIcons } from "./data/dataIcons";
 
 function Icons(){
-    const  [iconPic, setIconPic] = useState(dataIcons);
-    console.log(iconPic);
-
-return(<div>
+   
+return(
     <div className="conter">
-        {iconPic.map((item =>{
-            const {id, icon} = item;
+        {dataIcons.map((item =>{
+            const {id, icon, title, text} = item;
             return(
-                <div key={id}>
-                    <img src={iconPic} alt="icon"/>
+                <div className='icon' key={id}>
+                    <img src={icon} width="100px" alt="icon"/>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
                 </div>
             )
         }))}
     </div>
-</div>)
+    )
 }
 
 export default Icons;

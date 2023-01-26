@@ -1,10 +1,8 @@
-import Buttons from "./Buttons";
 import Footer from "./Footer";
 
 function ContactUs(){
     return(
         <div className="container">
-            <Buttons/>
             <div className="contact">
                 <h1 className="store one">Our stores</h1>
                 <h2 className="store two">contact us for any information and support!</h2>

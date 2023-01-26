@@ -8,19 +8,17 @@ function Shop(){
     const [instruments, setInstruments] = useState(data);
 
     const choosenInstruments = (searchTerm) => {
-        if(searchTerm === 'all'){
-            setInstruments(instruments);
-        } else{
             const newInstruments = data.filter(element => element.searchTerm === searchTerm);
             setInstruments(newInstruments);
         }
 
-    }
-
-
     return(
         <div>
-            <Buttons filteredInstruments={choosenInstruments}/>
+            <Buttons
+                filteredInstruments={choosenInstruments}
+                data={data}
+                setInstrument={setInstruments}
+            />
             <Instruments itemsForSale={instruments}/>
             <Footer/>
         </div>

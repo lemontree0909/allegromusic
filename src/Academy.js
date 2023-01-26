@@ -1,4 +1,3 @@
-import Buttons from "./Buttons";
 import Footer from "./Footer";
 import { useState } from "react";
 import { dataAcademy } from "./data/dataAcademy";
@@ -13,7 +12,6 @@ function Academy(){
       }
     return(
         <div className="container">
-            <Buttons/>
 
             <div className="cont">
                 <p className='back'>Welcome to</p>
