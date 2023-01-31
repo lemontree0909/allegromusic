@@ -17,7 +17,7 @@ function Shop(){
             <Buttons
                 filteredInstruments={choosenInstruments}
                 data={data}
-                setInstrument={setInstruments}
+                setInstruments={setInstruments}
             />
             <Instruments itemsForSale={instruments}/>
             <Footer/>
