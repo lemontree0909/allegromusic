@@ -21,7 +21,7 @@ function Academy(){
 
 
         {academy.map(item => {
-            const{id, description, showMore} = item;
+            const{description, showMore} = item;
 
             return(
             <div className="cont">
