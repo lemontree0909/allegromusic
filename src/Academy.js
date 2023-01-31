@@ -3,7 +3,7 @@ import { useState } from "react";
 import { dataAcademy } from "./data/dataAcademy";
 
 function Academy(){
-    const [academy, setAcademy] = useState(dataAcademy);
+    const academy = dataAcademy;
 
     const [showText, setShowText] = useState(false);
     const showTextClick = (item) => {
