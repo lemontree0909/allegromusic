@@ -1,4 +1,27 @@
+import { useMemo, useState } from "react";
+
 function Buttons({filteredInstruments, setInstruments, data}){
+
+    const [text, setText] = useState("");
+    const [search, setSearch] = useState("");
+
+    const handleText = (e) => {
+        setText(e.target.value)
+    }
+
+    const handleSearch = () => {
+        setSearch(text)
+    }
+
+    const filteredMusicInstruments = useMemo(() => data.filter((instrumentName) => {
+        console.log ('FILTERING!')
+        return instrumentName.searchTerm.toLowerCase().includes(search.toLocaleLowerCase())
+    }), [search])
+
+    // const filteredMusicInstruments = useMemo(() => data.filter((instrumentName) => {
+    //     return instrumentName.searchTerm.toLowerCase().includes(search.toLocaleLowerCase())
+    // }), [search])
+
     return(
         <div className="navbar">
             <button onClick={() => setInstruments(data)}>All</button>
@@ -14,7 +37,16 @@ function Buttons({filteredInstruments, setInstruments, data}){
             <button onClick={() => filteredInstruments("dubbing")}>dubbing</button>
             <button onClick={() => filteredInstruments("hi-fi")}>hi-fi</button>
             <button onClick={() => filteredInstruments("lessons")}>lessons</button>
-        </div>
+            <div >
+                <input type="text" onChange={handleText}></input>
+                <button type="button" onClick={handleSearch}>Search</button>
+                {/* <div>
+                    {filteredMusicInstruments.map((filteredMusicInstrument) => (
+                            <p key={filteredMusicInstrument.id}>{filteredMusicInstrument.searchTerm}</p>
+                        ))}
+                </div> */}
+            </div>
+        </div> 
     );
 }
 export default Buttons;

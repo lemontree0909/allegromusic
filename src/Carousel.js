@@ -1,8 +1,17 @@
 import { useState } from "react";
+// import { useTranslation } from "react-i18next";
 import './App.css';
 import { dataPromo } from "./data/dataPromo";
 
 function Carousel(){
+
+    // const { i18n, t } = useTranslation();
+
+    // const toggleLang = () => {
+    //   i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en')
+    // }
+
+
     const  [instrument, setInstrument] = useState(0);
     const {image} = dataPromo[instrument];
 
