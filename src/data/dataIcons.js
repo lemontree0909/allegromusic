@@ -5,6 +5,7 @@ import icon_12_installment_options from '../picture/icons/icon_12_installment_op
 
 
 export const dataIcons = [
+
     {
         id: 1,
         icon: icon_secure_shopping,

@@ -1,7 +1,12 @@
 import './App.css';
 import { dataIcons } from "./data/dataIcons";
+import { useTranslation } from "react-i18next";
+
 
 function Icons(){
+
+    const { i18n, t } = useTranslation();
+
    
 return(
     <div className="conter">
@@ -10,8 +15,8 @@ return(
             return(
                 <div className='icon' key={id}>
                     <img src={icon} width="100px" alt="icon"/>
-                    <h3>{title}</h3>
-                    <p>{text}</p>
+                    <h3>{t('dataIcons.title')}</h3>
+                    <p>{t('dataIcons.text')}</p>
                 </div>
             )
         }))}

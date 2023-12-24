@@ -1,8 +1,13 @@
 import Footer from "./Footer";
 import { useState } from "react";
 import { dataAcademy } from "./data/dataAcademy";
+import { useTranslation } from "react-i18next";
+
 
 function Academy(){
+
+    const { i18n, t } = useTranslation();
+
     const academy = dataAcademy;
 
     const [showText, setShowText] = useState(false);
@@ -14,8 +19,8 @@ function Academy(){
         <div className="container">
 
             <div className="cont">
-                <p className='back'>Welcome to</p>
-                <h1 className='back'>Allegro Academy</h1>
+                <p className='back'>{t('Welcome to')}</p>
+                <h1 className='back'>{t('Academy')}</h1>
             </div>
             <img src="https://plus.unsplash.com/premium_photo-1661335458798-74635c70b8a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" width="100%" alt="pic"/>
 
