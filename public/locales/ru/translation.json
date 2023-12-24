@@ -1,8 +1,9 @@
 {
+    "ALLEGRO": "Аллегро",
     "Shop": "Магазин",
-    "Allegro Academy": "Академия Allegro",
+    "Allegro Academy": "Аллегро Академия",
     "Contact Us": "Наши контакты",
-    "Allegro's Story": "История Allegro",
+    "Allegro's Story": "История Аллегро",
     "From a small music store in the 70s to the 100 best music stores in the world. The journey of Allegro Music, who is among the first...": "От небольшого музыкального магазина в 70-х годах до 100 лучших музыкальных магазинов мира. Путешествие Allegro Music, входящего в число...",
     "Previous": "Назад",
     "Next": "Вперёд",
@@ -29,7 +30,9 @@
     "Huge catalog of musical instruments at your fingertips.": "Огромный каталог музыкальных инструментов у вас под рукой.",
     "Enjoy the convenience of shopping with all credit cards in 12 installments.": "Наслаждайтесь удобством покупок со всеми кредитными картами в 12 рассрочек.",
 
-    "Welcome to": "Добро Пожаловать",
-    "Academy": "в академию Allegro"
+    "Welcome to": "Добро Пожаловать в",
+    "Academy": "Академию Аллегро",
+    "Our stores": "Наши магазины",
+    "contact us for any information and support!":"свяжитесь с нами для получения любой информации и поддержки!"
 
 }

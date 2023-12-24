@@ -8,7 +8,7 @@ function Instruments({itemsForSale}){
                         <img src={image} width="250px" alt="instrument"/>
                         <div className="product-info">
                             <h3>{name}</h3>
-                            <h4>$ {price}</h4>
+                            <h2>$ {price}</h2>
                         </div>
                     </div>
                 )

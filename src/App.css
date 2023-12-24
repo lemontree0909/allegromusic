@@ -1,24 +1,45 @@
 @import url(//db.onlinewebfonts.com/c/2596224269750e00c3ad5356299a3b9f?family=Ogg);
 body{
   margin: 0;
+  background-color: #fef0de;
 }
 .container{
   min-height: 120vh;
   position: relative;
 }
+
 nav {
   display: flex;
   justify-content: center;
   padding: 15px;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
 }
+
+.nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  padding: 5px;
+}
+
 .navbar {
   display: flex;
   background: black;
-  justify-content: center;
+  justify-content: space-between;
   padding: 15px;
-  flex-wrap: wrap;
 }
+
+.navbarElements{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
 .icon{
   display: flex;
   flex-direction: column;
@@ -33,9 +54,19 @@ button{
   color: #fff;
   margin: 10px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 14px;
   cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
 }
+input{
+  font-family: 'Ubuntu', sans-serif;
+}
+.search{
+  font-size: medium;
+  line-height: 1.2em;
+  margin: 5px 0;
+}
+
 .btnShow {
   border: none;
   background-color: white;
@@ -57,6 +88,8 @@ button{
   flex-grow: 1;
   flex-basis: 16%;
   margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
 }
 
 .product-info{
@@ -77,10 +110,11 @@ button{
   align-items: center;
   font-size: 30px;
   margin-top: 50px;
+  font-family: 'Ubuntu', sans-serif;
 }
 .btn-home{
   top: 550px;
-  background-color: #fffd38;
+  background-color: #ffa05e;
   padding: 10px;
   border-radius: 10px;
   color: black;
@@ -90,11 +124,19 @@ button{
   color: #fff;
 }
 .back{
-  font-family: "Ogg";
-  font-weight: bold;
-  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
 }
 
+.right{
+  /* justify-self: flex-end; */
+  margin-right: 30px;
+}
+.left {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
+}
 .conter{
   display: flex;
   justify-content: space-around;
@@ -106,12 +148,13 @@ button{
 .textAcademy{
   font-size: 20px;
   width: 80%;
+  line-height: 30px;
 }
 
 .footbar {
   position: fixed;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background: black;
   width: 100%;
@@ -140,7 +183,7 @@ button{
 .store{
   align-items: center;
   z-index: 1;
-  font-family: "Ogg";
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
 }
 .one{

@@ -28,16 +28,20 @@ function App() {
 
   return <Router>
     <nav>
-      <Link to ="/" className="link">ALLEGRO</Link>
+      <div className="nav">
+      <Link to ="/" className="link">{t('ALLEGRO')}</Link>
       <Link to ="/shop" className="link">{t('Shop')}</Link>
       <Link to ="/academy" className="link">{t('Allegro Academy')}</Link>
       <Link to ="/contact" className="link">{t('Contact Us')}</Link>
+      </div>
 
-      <button className="btn-home" onClick={toggleLang}>
+      <button className="btn-home right" onClick={toggleLang}>
         {i18n.language === 'en' ? 'RU' : 'EN'}
       </button>
-      
+
     </nav>
+    
+
 
     <Routes>
       <Route path="/" element={<Home/>}/>

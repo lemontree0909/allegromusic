@@ -4,7 +4,7 @@ export const data = [
       id: 1,
       name: "BOSTON GP-163 Gloss Black 163 CM Grand Piano",
       searchTerm: "piano",
-      price: "79845.00",
+      price: "9845.00",
       image: "https://images.unsplash.com/photo-1576487236230-eaa4afe9b453?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBpYW5vfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
     },
   
@@ -12,7 +12,7 @@ export const data = [
       id: 2,
       name: "YAMAHA K-125 Gloss Black 125 CM Wall Piano",
       searchTerm: "piano",
-      price: "32129.99",
+      price: "3229.99",
       image: "https://images.unsplash.com/photo-1615884241095-305d10e66980?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHBpYW5vfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=800&q=60"
     },
 

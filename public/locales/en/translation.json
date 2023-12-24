@@ -1,4 +1,5 @@
 {
+    "ALLEGRO": "ALLEGRO",
     "Shop": "Shop",
     "Allegro Academy": "Allegro Academy",
     "Contact Us": "Contact Us",
@@ -32,7 +33,9 @@
     // "Enjoy the convenience of shopping with all credit cards in 12 installments.": "Enjoy the convenience of shopping with all credit cards in 12 installments."
 
     "Welcome to": "Welcome to",
-    "Academy": "Allegro Academy"
+    "Academy": "Academy Allegro",
+    "Our stores": "Our stores",
+    "contact us for any information and support!":"contact us for any information and support!"
 
 
 }

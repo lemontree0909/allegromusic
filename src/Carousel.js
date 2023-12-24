@@ -38,7 +38,7 @@ return(<div>
     </div>
     <div className="info">
         <h1 className='back'>{t("Allegro's Story")}</h1>
-        <p className='back'>{t('From a small music store in the 70s to the 100 best music stores in the world. The journey of Allegro Music, who is among the first...')}</p>
+        <h4 className='back'>{t('From a small music store in the 70s to the 100 best music stores in the world. The journey of Allegro Music, who is among the first...')}</h4>
     </div>
 </div>)
 }

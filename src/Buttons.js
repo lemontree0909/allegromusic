@@ -37,6 +37,7 @@ function Buttons({filteredInstruments, setInstruments, data}){
 
     return(
         <div className="navbar">
+            <div className="navbarElements">
             <button onClick={() => setInstruments(data)}>{t('All')}</button>
             <button onClick={() => filteredInstruments("piano")}>{t('pianos')}</button>
             <button onClick={() => filteredInstruments("guitar")}>{t('guitars')}</button>
@@ -50,9 +51,11 @@ function Buttons({filteredInstruments, setInstruments, data}){
             <button onClick={() => filteredInstruments("dubbing")}>{t('dubbing')}</button>
             <button onClick={() => filteredInstruments("hi-fi")}>{t('hi-fi')}</button>
             <button onClick={() => filteredInstruments("lessons")}>{t('lessons')}</button>
-            <div >
+            </div>
+
+            <div className="right">
                 <input type="text" onChange={handleText}></input>
-                <button type="button" onClick={handleSearch}>{t('Search')}</button>
+                <button type="button" className="search" onClick={handleSearch}>🔍</button>
                 {/* <div>
                     {filteredMusicInstruments.map((filteredMusicInstrument) => (
                             <p key={filteredMusicInstrument.id}>{filteredMusicInstrument.searchTerm}</p>
