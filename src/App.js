@@ -29,8 +29,8 @@ function App() {
   return <Router>
     <nav>
       <div className="nav">
-      <Link to ="/" className="link">{t('ALLEGRO')}</Link>
-      <Link to ="/shop" className="link">{t('Shop')}</Link>
+      <Link to ="/home" className="link">{t('About us')}</Link>
+      <Link to ="/" className="link">{t('Shop')}</Link>
       <Link to ="/academy" className="link">{t('Allegro Academy')}</Link>
       <Link to ="/contact" className="link">{t('Contact Us')}</Link>
       </div>
@@ -44,8 +44,8 @@ function App() {
 
 
     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/shop" element={<Shop/>}/>
+      <Route path="/home" element={<Home/>}/>
+      <Route path="/" element={<Shop/>}/>
       <Route path="/academy" element={<Academy/>}/>
       <Route path="/contact" element={<ContactUs/>}/>
     </Routes>
