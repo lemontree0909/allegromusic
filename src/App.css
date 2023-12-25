@@ -58,6 +58,10 @@ button{
   cursor: pointer;
   font-family: 'Ubuntu', sans-serif;
 }
+.cta:hover {
+  background: #fef0de;
+  color: #000;
+}
 input{
   font-family: 'Ubuntu', sans-serif;
 }
@@ -90,6 +94,12 @@ input{
   margin-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
+}
+
+.product-card:hover{
+  scale: 1.1;
+  transition: ease 1s;
+  /* cursor: pointer; */
 }
 
 .product-info{

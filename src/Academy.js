@@ -30,9 +30,7 @@ function Academy(){
 
             return(
             <div className="cont">
-                    {/* <p className="textAcademy">{showMore ? {t('description')} : {t('description')}.substring(0,140) + ' ....'} */}
-                    <p className="textAcademy">{t('description')}
-
+                    <p className="textAcademy">{showMore ? description : description.substring(0,140) + ' ....'}
                     <button className='btnShow' onClick={() => showTextClick(item)}>{showMore ? 'show less' : 'show more'}</button>
                     </p>
             </div>
