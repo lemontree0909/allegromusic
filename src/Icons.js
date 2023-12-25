@@ -15,8 +15,8 @@ return(
             return(
                 <div className='icon' key={id}>
                     <img src={icon} width="100px" alt="icon"/>
-                    <h3>{title}</h3>
-                    <p>{text}</p>
+                    <h3>{t('title')}</h3>
+                    <p>{t('text')}</p>
 
                 </div>
             )
@@ -26,7 +26,6 @@ return(
 }
 
 export default Icons;
-
 
 
 
