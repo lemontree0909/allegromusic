@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 function Footer(){
 
-    const { i18n, t } = useTranslation();
+    const { i18n } = useTranslation();
 
     return(
         <div className="footbar">

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 function Buttons({filteredInstruments, setInstruments, data}){
 
-    const { i18n, t } = useTranslation();
+    const { t } = useTranslation();
 
     const [text, setText] = useState("");
     const [search, setSearch] = useState("");

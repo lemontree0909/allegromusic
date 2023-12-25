@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 function Academy(){
 
-    const { i18n, t } = useTranslation();
+    const { t } = useTranslation();
 
     const academy = dataAcademy;
 
@@ -30,7 +30,9 @@ function Academy(){
 
             return(
             <div className="cont">
-                    <p className="textAcademy">{showMore ? description : description.substring(0,140) + ' ....'}
+                    {/* <p className="textAcademy">{showMore ? {t('description')} : {t('description')}.substring(0,140) + ' ....'} */}
+                    <p className="textAcademy">{t('description')}
+
                     <button className='btnShow' onClick={() => showTextClick(item)}>{showMore ? 'show less' : 'show more'}</button>
                     </p>
             </div>

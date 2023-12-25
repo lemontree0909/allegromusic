@@ -5,7 +5,7 @@ import { dataPromo } from "./data/dataPromo";
 
 function Carousel(){
 
-    const { i18n, t } = useTranslation();
+    const { t } = useTranslation();
 
     const  [instrument, setInstrument] = useState(0);
     const {image} = dataPromo[instrument];
