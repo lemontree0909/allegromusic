@@ -1,5 +1,8 @@
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
+// import Modal from "./Modal/Modal";
+// import Content from "./Modal/Content";
+import Swal from 'sweetalert2';
 
 function Buttons({filteredInstruments, setInstruments, data}){
 
@@ -7,6 +10,8 @@ function Buttons({filteredInstruments, setInstruments, data}){
 
     const [text, setText] = useState("");
     const [search, setSearch] = useState("");
+
+    // const [isOpen, setIsOpen] = useState(false);
 
     const handleText = (e) => {
         setText(e.target.value)
@@ -16,7 +21,6 @@ function Buttons({filteredInstruments, setInstruments, data}){
         setSearch(text)
     }
 
-
     useMemo(() => {
         if (search) {
             const filteredItems = [];
@@ -25,13 +29,26 @@ function Buttons({filteredInstruments, setInstruments, data}){
                     filteredItems.push(instrumentName);
                     console.log(instrumentName.searchTerm.toLowerCase().includes(search.toLocaleLowerCase()))
                 }
-                if (instrumentName.name.toLowerCase().includes(search.toLocaleLowerCase())) {
+                else if (instrumentName.name.toLowerCase().includes(search.toLocaleLowerCase())) {
                     filteredItems.push(instrumentName);
-                    console.log(instrumentName.name.toLowerCase().includes(search.toLocaleLowerCase()))
                 }
+                else {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Something went wrong!",
+                        footer: '<a href="#">Why do I have this issue?</a>'
+                      });
+                      
+                }
+
                 setInstruments(filteredItems);
+
             })
         }
+                // ЕСЛИ ALERT ПИСАТЬ ЗДЕСЬ ТОЖЕ BUG!!!!!!!!!!!!!!!
+
+    // eslint-disable-next-line
     }, [search, data])
 
 
@@ -54,8 +71,16 @@ function Buttons({filteredInstruments, setInstruments, data}){
             </div>
 
             <div className="right">
-                <input type="text" onChange={handleText}></input>
-                <button type="button" className="search" onClick={handleSearch}>🔍</button>
+                    <input type="text" onChange={handleText}></input>
+                    <button type="submit" className="search" onClick={handleSearch}>🔍</button>
+                    {/* <div>
+                        <button onClick={() => setIsOpen(true)}>Open Modal</button>
+                        {isOpen && 
+                        <Modal setIsOpen={setIsOpen}>
+                        <Content setIsOpen={setIsOpen}/>
+                        </Modal>
+      }
+                    </div> */}
             </div>
         </div> 
     );

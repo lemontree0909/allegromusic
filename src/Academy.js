@@ -19,8 +19,8 @@ function Academy(){
         <div className="container">
 
             <div className="cont">
-                <h3 className='back'>{t('Welcome to')}</h3>
-                <h1 className='back'>{t('Academy')}</h1>
+                <h3 className='titleAcademy'>{t('Welcome to')}</h3>
+                <h1 className='titleAcademy'>{t('Academy')}</h1>
             </div>
             <img src="https://plus.unsplash.com/premium_photo-1661335458798-74635c70b8a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" width="100%" alt="pic"/>
 
@@ -30,7 +30,6 @@ function Academy(){
 
             return(
             <div className="cont">
-                    {/* <p className="textAcademy">{showMore ? {t('description')} : {t('description')}.substring(0,140) + ' ....'} */}
                     <p className="textAcademy">{showMore ? description : description.substring(0,140) + ' ....'}
                     <button className='btnShow' onClick={() => showTextClick(item)}>{showMore ? 'show less' : 'show more'}</button>
                     </p>

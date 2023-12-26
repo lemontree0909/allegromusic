@@ -178,7 +178,7 @@ export const data = [
   
     {
       id: 23,
-      name: "Lessons",
+      name: "Flute lesson",
       searchTerm: "lessons",
       price: "75.00",
       image: "https://images.pexels.com/photos/8192108/pexels-photo-8192108.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -186,7 +186,7 @@ export const data = [
   
     {
       id: 24,
-      name: "Lessons",
+      name: "Piano lesson",
       searchTerm: "lessons",
       price: "75.00",
       image: "https://images.pexels.com/photos/7521354/pexels-photo-7521354.jpeg?auto=compress&cs=tinysrgb&w=800"

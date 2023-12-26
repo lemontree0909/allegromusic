@@ -37,8 +37,8 @@ return(<div>
         <button className="btn-home" onClick={nextInstrument}>{t('Next')}</button>
     </div>
     <div className="info">
-        <h1 className='back'>{t("Allegro's Story")}</h1>
-        <h4 className='back'>{t('From a small music store in the 70s to the 100 best music stores in the world. The journey of Allegro Music, who is among the first...')}</h4>
+        <h1 className='textStory'>{t("Allegro's Story")}</h1>
+        <h4 className='textStory'>{t('Allegro is one of the best quality music stores in the city. In fact, they are the best when it comes to pianos. In addition to pianos they also have a wide range of other instruments. Allegro is the best distributor of many worldwide musical instrument manufacturers such as Yamaha and Zildjian, PRS,Mesa/Boogie, Line6, Zoom, Schecter, Godin, Pearl River, Suzuki, Rotosund, Ashton, and Savarez.')}</h4>
     </div>
 </div>)
 }

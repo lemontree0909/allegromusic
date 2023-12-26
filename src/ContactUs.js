@@ -7,13 +7,16 @@ function ContactUs(){
     const { t } = useTranslation();
 
     return(
-        <div className="container">
+        <div>
+        <div>
             <div className="contact">
                 <h1 className="store one">{t("Our stores")}</h1>
                 <h2 className="store two">{t("contact us for any information and support!")}</h2>
                 <img className="storeImage" src="https://images.unsplash.com/photo-1519508234439-4f23643125c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aW5zdHJ1bWVudHMlMjBzaG9wfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="pic"/>
                 <button className="store btn">✉️ info@allegromusic.com</button>
             </div>
+        </div>
+
             <div className="containerParent">
                 <div className="containerCard">
                     <div className="card">

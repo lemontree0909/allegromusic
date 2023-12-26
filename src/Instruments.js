@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 function Instruments({itemsForSale}){
+    const { t } = useTranslation();
+
     return(
         <div className="products">
             {itemsForSale.map((item =>{
@@ -7,8 +11,8 @@ function Instruments({itemsForSale}){
                     <div className="product-card" key={id}>
                         <img src={image} width="250px" alt="instrument"/>
                         <div className="product-info">
-                            <h3>{name}</h3>
-                            <h2>$ {price}</h2>
+                            <h3>{t(name)}</h3>
+                            <h2>$ {t(price)}</h2>
                         </div>
                     </div>
                 )
