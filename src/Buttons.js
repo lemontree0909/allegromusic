@@ -9,8 +9,6 @@ function Buttons({filteredInstruments, setInstruments, data}){
     const [text, setText] = useState("");
     const [search, setSearch] = useState("");
 
-    // const [isOpen, setIsOpen] = useState(false);
-
     const handleText = (e) => {
         setText(e.target.value)
     }
@@ -59,14 +57,6 @@ function Buttons({filteredInstruments, setInstruments, data}){
             <div className="right">
                     <input type="text" onChange={handleText}></input>
                     <button type="submit" className="search" onClick={handleSearch}>🔍</button>
-                    {/* <div>
-                        <button onClick={() => setIsOpen(true)}>Open Modal</button>
-                        {isOpen && 
-                        <Modal setIsOpen={setIsOpen}>
-                        <Content setIsOpen={setIsOpen}/>
-                        </Modal>
-      }
-                    </div> */}
             </div>
         </div> 
     );
